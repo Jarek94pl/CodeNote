@@ -1,17 +1,23 @@
-section.playFair{
+section.playFair {
   background-color: #09d3ac;
   border-radius: 2rem;
-
-  h1.text-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  h1{
     display: flex;
     justify-content: center;
     font-family: "BankGothic Md BT", sans-serif;
     font-size: 3rem;
   }
-  main.container{
+  p{
     display: flex;
     justify-content: center;
-    padding-bottom: 1.5rem;
+    font-family: "BankGothic Md BT", sans-serif;
+    font-size: 1.1rem;
+    margin: .7rem .4rem;
+
   }
   label {
     font-family: "BankGothic Md BT", sans-serif;
@@ -20,36 +26,42 @@ section.playFair{
     padding-top: 1rem;
     font-size: 1.5rem;
   }
+
   input {
     font-family: "BankGothic Md BT", sans-serif;
     border-radius: 1rem;
-    font-size: 1rem;
     text-align: center;
-    line-height:4rem ;
+    line-height: 2rem;
+
+
 
   }
+
   button {
     font-family: "BankGothic Md BT", sans-serif;
     width: 6rem;
-    line-height:2rem;
+    line-height: 2rem;
     display: flex;
-    justify-content: center;
-    border-radius: 0.4rem;
+    justify-content: space-between;
+    border-radius: 0.2rem;
     border: 0.2rem solid dimgray;
+
+
   }
-  div.firstButton{
-    padding-top: 0.5rem;
-    display: flex;
-    justify-content: center;
+  textarea#p {
+    font-family: "BankGothic Md BT", sans-serif;
+    border-radius: 1rem;
+    font-size: 1rem;
+    width: 70%;
+    text-align: center;
+
   }
-  div.secondButton{
-    display: flex;
-    justify-content: center;
+  textarea#c{
+    font-family: "BankGothic Md BT", sans-serif;
+    border-radius: 1rem;
+    font-size: 1rem;
+    width: 70%;
+    margin-bottom: 0.6rem;
+    text-align: center;
   }
-}
-div.progress{
-  height: 1.2rem;
-  width: 7rem;
-  border: 0.1rem solid gray;
-  font-family: "BankGothic Md BT", sans-serif;
 }
