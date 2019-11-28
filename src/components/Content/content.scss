@@ -1,0 +1,74 @@
+.App-content {
+  background-color: #282c34;
+  min-height:78vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  section.firstWidget{
+    @keyframes appear {
+      0% {
+        opacity: 1;
+
+      }40% {
+
+      border-radius: 2rem;
+      transform: rotate(45deg);
+
+      }100% {
+      transform: rotate(360deg);
+      border-radius: 8rem;
+      text-align: center;
+      font-size: 2.8rem;
+      }
+    }
+    h1{
+      font-family: "BankGothic Md BT", sans-serif;
+      font-size: 4rem;
+      padding-bottom: 5rem;
+    }
+    div.typesOfCiphering{
+      display: flex;
+      justify-content: space-around;
+      padding-bottom: 6rem;
+      div.playfairCipher{
+        height: 15rem;
+        width:  15rem;
+        background-color: #09d3ac;
+        border-radius: 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        a{
+          text-decoration: none;
+          p{
+            font-family: "BankGothic Lt BT", sans-serif;
+            color: white;
+          }
+        }
+        &:hover{
+          animation: appear  0.4s forwards;
+        }
+      }
+      div.railFenceCipher{
+        height: 15rem;
+        width:  15rem;
+        background-color: #09d3ac;
+        border-radius: 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        a{
+          text-decoration: none;
+          p{
+            font-family: "BankGothic Lt BT", sans-serif;
+            color: white;
+          }
+        }
+        &:hover{
+          animation: appear  0.4s  forwards;
+        }
+      }
+    }
+  }
+}

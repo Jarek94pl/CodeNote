@@ -1,0 +1,46 @@
+section.railFence {
+  background-color: #09d3ac;
+  border-radius: 2rem; }
+  section.railFence h1 {
+    display: flex;
+    justify-content: center;
+    font-family: "BankGothic Md BT", sans-serif;
+    font-size: 3rem; }
+  section.railFence p {
+    display: flex;
+    justify-content: center;
+    font-family: "BankGothic Md BT", sans-serif;
+    font-size: 1.1rem; }
+  section.railFence label {
+    font-family: "BankGothic Md BT", sans-serif;
+    display: flex;
+    justify-content: center;
+    padding-top: 1rem;
+    font-size: 1.5rem; }
+  section.railFence input {
+    font-family: "BankGothic Md BT", sans-serif;
+    border-radius: 1rem;
+    text-align: center;
+    line-height: 2rem; }
+  section.railFence button {
+    font-family: "BankGothic Md BT", sans-serif;
+    width: 6rem;
+    line-height: 2rem;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 0.2rem;
+    border: 0.2rem solid dimgray; }
+  section.railFence textarea#p {
+    font-family: "BankGothic Md BT", sans-serif;
+    border-radius: 1rem;
+    font-size: 1rem;
+    text-align: center;
+    margin-left: 14rem; }
+  section.railFence textarea#c {
+    font-family: "BankGothic Md BT", sans-serif;
+    border-radius: 1rem;
+    font-size: 1rem;
+    justify-content: center;
+    margin-left: 14rem; }
+
+/*# sourceMappingURL=RailFence.css.map */

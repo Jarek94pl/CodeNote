@@ -1,0 +1,58 @@
+.App-content {
+  background-color: #282c34;
+  min-height: 78vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white; }
+@keyframes appear {
+  0% {
+    opacity: 1; }
+  40% {
+    border-radius: 2rem;
+    transform: rotate(45deg); }
+  100% {
+    transform: rotate(360deg);
+    border-radius: 8rem;
+    text-align: center;
+    font-size: 2.8rem; } }
+  .App-content section.firstWidget h1 {
+    font-family: "BankGothic Md BT", sans-serif;
+    font-size: 4rem;
+    padding-bottom: 5rem; }
+  .App-content section.firstWidget div.typesOfCiphering {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 6rem; }
+    .App-content section.firstWidget div.typesOfCiphering div.playfairCipher {
+      height: 15rem;
+      width: 15rem;
+      background-color: #09d3ac;
+      border-radius: 1rem;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .App-content section.firstWidget div.typesOfCiphering div.playfairCipher a {
+        text-decoration: none; }
+        .App-content section.firstWidget div.typesOfCiphering div.playfairCipher a p {
+          font-family: "BankGothic Lt BT", sans-serif;
+          color: white; }
+      .App-content section.firstWidget div.typesOfCiphering div.playfairCipher:hover {
+        animation: appear  0.4s forwards; }
+    .App-content section.firstWidget div.typesOfCiphering div.railFenceCipher {
+      height: 15rem;
+      width: 15rem;
+      background-color: #09d3ac;
+      border-radius: 1rem;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .App-content section.firstWidget div.typesOfCiphering div.railFenceCipher a {
+        text-decoration: none; }
+        .App-content section.firstWidget div.typesOfCiphering div.railFenceCipher a p {
+          font-family: "BankGothic Lt BT", sans-serif;
+          color: white; }
+      .App-content section.firstWidget div.typesOfCiphering div.railFenceCipher:hover {
+        animation: appear  0.4s  forwards; }
+
+/*# sourceMappingURL=content.css.map */
