@@ -8,7 +8,7 @@ class Playfair extends Component{
         message:"",
         result:""
     };
-    isChet = false;
+    //isChet = false;
     isEnd = false;
     flag = false;
     flagX = false;
@@ -25,7 +25,7 @@ class Playfair extends Component{
         }, 105)
     }
     processKey = ()=>{
-        let key = this.state.key
+        let key = this.state.key;
         key = key.toUpperCase().replace(/\s/g, '').replace(/J/g, "I");
         let result = [];
         let temp = '';
@@ -46,7 +46,7 @@ class Playfair extends Component{
     };
     cipher = () => {
         let keyresult = this.processKey();
-        let res = [];
+        //let res = [];
         let error = 'Warning!!! String is empty';
         let str = this.state.message;
         if(str === '') {
@@ -95,7 +95,7 @@ class Playfair extends Component{
             }
         }
 
-        let t = [];
+        //let t = [];
         let enCodeStr = '';
         for(let i = 0; i < textPhrase.length; i += 2){
             let pair1 = textPhrase[i];
@@ -103,11 +103,11 @@ class Playfair extends Component{
             let p1i, p1j, p2i, p2j;
             for(let stroka = 0; stroka < keyresult.length; stroka++) {
                 for(let stolbec = 0; stolbec < keyresult[stroka].length; stolbec++){
-                    if (keyresult[stroka][stolbec] == pair1){
+                    if (keyresult[stroka][stolbec] === pair1){
                         p1i = stroka;
                         p1j = stolbec;
                     }
-                    if (keyresult[stroka][stolbec] == pair2){
+                    if (keyresult[stroka][stolbec] === pair2){
                         p2i = stroka;
                         p2j = stolbec;
                     }
@@ -163,10 +163,10 @@ class Playfair extends Component{
 
     };
     decrypt = ()=>{
-        let deCodeStr = '';
+        //let deCodeStr = '';
         let text = '';
         let error = "Warning!!! String is empty";
-        let text1 = this.cipher();
+        let text1 = (this.cipher() || this.state.message);               //tutaj zostały wprowadzone zmiany jakby cos się wysprzegliło
         if(text1 === '') {
             alert(error);
             // document.getElementById('printDeCode').innerHTML = error;
@@ -178,17 +178,17 @@ class Playfair extends Component{
             let p1i, p1j, p2i, p2j;
             for(let stroka = 0; stroka < keyresult.length; stroka++) {
                 for(let stolbec = 0; stolbec < keyresult[stroka].length; stolbec++){
-                    if (keyresult[stroka][stolbec] == pair1){
+                    if (keyresult[stroka][stolbec] === pair1){
                         p1i = stroka;
                         p1j = stolbec;
                     }
-                    if (keyresult[stroka][stolbec] == pair2){
+                    if (keyresult[stroka][stolbec] === pair2){
                         p2i = stroka;
                         p2j = stolbec;
                     }
                 }
             }
-            var coord1 = '', coord2 = '';
+            let coord1 = '', coord2 = '';
 
             if(p1i === p2i) {
                 if(p1j === 0) {
@@ -262,7 +262,7 @@ class Playfair extends Component{
         let style = {
             backgroundColor: "#09d3ac",
             width: `${this.state.width}%`,
-            height: "20px"
+            height: "1.1rem"
         };
         if(this.state.width < 105){
             return(
@@ -278,7 +278,7 @@ class Playfair extends Component{
                     <p>PLAINTEXT</p>
                     <textarea id="p" name="message" rows="3" cols="40" placeholder="Here enter your message" value={this.state.message} onChange={this.handleChange}/>
 
-                    <p>key:<input id="key" name="key" size="5" value={this.state.key} type="text" onChange={this.handleChange}/></p>
+                    <p>key:<input id="key" name="key"  value={this.state.key} type="text" onChange={this.handleChange}/></p>
                     <p> <input name="btnEn" value="ENCRYPT" onClick={this.encrypt} type="button"/>
                         <input name="btnDec" value="DECRYPT" onClick={this.decrypt} type="button"/> </p>
                     <p>Ciphertext</p> <textarea id="c" name="c" rows="3" cols="40" value={this.state.result} readOnly/>

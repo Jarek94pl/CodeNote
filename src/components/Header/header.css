@@ -1,13 +1,24 @@
+@media screen and (max-width: 680px) {
+  .App-header {
+    background-color: #09d3ac;
+    min-height: 15vh;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    color: #282c34; }
+    .App-header p {
+      font-family: "BankGothic Lt BT", sans-serif;
+      padding-bottom: .3rem; } }
 .App-header {
   background-color: #09d3ac;
   min-height: 15vh;
   display: flex;
-  padding-left: 7rem;
   align-items: center;
   justify-content: flex-start;
   color: #282c34; }
   .App-header p {
-    font-family: "BankGothic Lt BT";
-    padding-bottom: .9rem; }
+    font-family: "BankGothic Lt BT", sans-serif;
+    padding-bottom: .9rem;
+    padding-left: 2rem; }
 
 /*# sourceMappingURL=header.css.map */
