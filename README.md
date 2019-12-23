@@ -8,6 +8,8 @@
 
 Here is look for a main page:
 
+https://github.com/Jarek94pl/CodeNote/issues/1#issue-541791996
+
 
 
 
