@@ -8,7 +8,8 @@
 
 Here is look for a main page:
 
-https://github.com/Jarek94pl/CodeNote/issues/1#issue-541791996
+![obraz](https://user-images.githubusercontent.com/56019032/71365054-2ee45d80-259e-11ea-8bc9-17ff845911ee.png)
+
 
 
 
