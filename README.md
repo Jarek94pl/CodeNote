@@ -14,7 +14,7 @@ Here is look for a main page:
 
 ### In future i will add to this project more types of ciphering
 
-### project is fully responsive
+### project is completely responsive
 
 
 ### `npm start`
